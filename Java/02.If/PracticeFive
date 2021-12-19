@@ -8,13 +8,14 @@ public class Main {
   public static void main(String[] args) {
   
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
+    System.out.println("연도를 입력하세요");
+    int years = sc.nextInt();
     
-    if((n%4==0 && n%100!=0) || n%400==0){
-        System.out.println(1);
+    if((years%4==0 && years%100!=0) || years%400==0){
+        System.out.println("1");
         }
     else {
-      System.out.println(0);
+      System.out.println("0");
       }
   }
   
