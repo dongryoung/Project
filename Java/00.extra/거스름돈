@@ -1,0 +1,26 @@
+package Practice;
+import  java.util.Scanner;
+
+public class Pracatice {
+	
+	public static void main(String[] args) {
+
+		int money = 1000;
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("가격을 입력해주세요");
+		int price = sc.nextInt();
+		
+		int change = money-price;
+		
+		int a = change/500;
+		int b = (change%500)/100;
+		int c = (change%100)/50;
+		int d = (change%50)/10;
+		
+		System.out.println("거스름돈" + change + "원  " + "500원" + a + "개  " + "100원" + b + "개  " + "50원" + c + "개  " + "10원" + d + "개  ");
+
+	}
+
+}
