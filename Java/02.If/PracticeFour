@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main{
+public class Main{
     public static void main(String[] args){
         String grade;
         Scanner sc = new Scanner(System.in);
@@ -21,8 +21,3 @@ class Main{
         System.out.println(grade);
     }
 }
-
-
-
-
-출처: https://jhnyang.tistory.com/129 [양햄찌가 만드는 세상]
