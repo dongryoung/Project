@@ -13,7 +13,9 @@ public class Main {
     
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("시를 입력하세요");
 		int H = sc.nextInt();
+		System.out.println("분을 입력하세요");
 		int M = sc.nextInt();
 		
 		if(M < 45) {
