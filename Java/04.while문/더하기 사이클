@@ -22,9 +22,9 @@ public class Main {
 
         
 		while (true) {
-      int q = start / 10;
-      int r = start % 10;
-      int sum = q + r;
+			int q = start / 10;
+			int r = start % 10;
+			int sum = q + r;
       
 			x = r * 10 + sum % 10; 
 			count++;
