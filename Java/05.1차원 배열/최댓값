@@ -1,0 +1,36 @@
+package Practice;
+import  java.util.Scanner;
+
+public class Practice {
+	
+	public static void main(String[] args) {
+
+		System.out.println("정수갯수(배열크기)");
+		Scanner sc=new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		int max =0;
+		int maxI =-1;
+		int min = 1000001;
+		if(1<=N && N<=1000000){
+			int[] arr = new int[N];
+			
+			for (int i = 0; i < N; i++) {
+				System.out.println(i+1+"번째");
+				arr[i] = sc.nextInt();
+			}
+			for (int i = 0; i < N; i++) {
+				if (arr[i] >= max) {
+					max = arr[i];
+					maxI = i;
+					
+				}
+				if (arr[i] <= min) {
+					min = arr[i];
+				}
+			}
+		System.out.println("max:"+max+"배열번호:"+maxI);
+		}
+	}
+
+}
