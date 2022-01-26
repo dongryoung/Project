@@ -1,5 +1,3 @@
-package sss;
-
 import java.util.Scanner;
 
 public class practiceThree {
@@ -7,7 +5,7 @@ public class practiceThree {
 			Scanner sc ;
 			int N,i,j,k;
 
-			System.out.println("±¸±¸´Ü ¸î´Ü±îÁö ÇÒ°Ç°¡¿ä?");
+			System.out.println("êµ¬êµ¬ë‹¨ ëª‡ë‹¨ê¹Œì§€ í• ê±´ê°€ìš”?");
 			sc=new Scanner(System.in);
 			N=sc.nextInt();
 			
