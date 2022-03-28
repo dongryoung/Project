@@ -1,5 +1,3 @@
-//정수인데 3자리 어케하지????
-
 package Practice;
 import  java.util.Scanner;
 
@@ -37,9 +35,12 @@ public class Pracatice {
 			
 		}
 		
+		StringBuffer sb = new StringBuffer();
+		
 		for(int k=0; k<케이스수; k++) {
 			System.out.println("********************************");
-			System.out.println((k+1) + "번째 케이스의 평균 :" + Math.round(scoreAveList[k] * 1000) / 1000.00);
+			sb.append(String.format("%.3f", scoreAveList[k]));
+			System.out.println((k+1) + "번째 케이스의 평균 :" + sb.toString());
 		}
 	}
 }
