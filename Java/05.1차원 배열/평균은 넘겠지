@@ -1,0 +1,45 @@
+//정수인데 3자리 어케하지????
+
+package Practice;
+import  java.util.Scanner;
+
+public class Pracatice {
+	
+	public static void main(String[] args) {
+		
+
+		System.out.println("케이스 갯수를 입력");
+		Scanner sc = new Scanner(System.in);
+		int 케이스수 = sc.nextInt();
+		double[] scoreAveList = new double[케이스수];
+		
+		for(int i=0; i<케이스수; i++) {
+			System.out.println("********************************");
+			System.out.println(케이스수 + "번쨰 케이스중의 " + (i+1) + "번째 케이스의 학생 수 입력");
+			int 학생수 = sc.nextInt();
+			double[] caseList = new double[학생수];
+			
+			int sum = 0;
+			for(int j=0; j<학생수; j++){
+				
+				System.out.println(학생수 + "명의 학생중의 " + (j+1) + "번째 학생의 점수 입력");
+				double 점수 = sc.nextInt();
+				
+				if(점수<1 || 점수>100){
+					System.out.println("점수의 범위는 1~100까지 입니다");
+					return;
+				}
+				caseList[j] = 점수;
+				sum += 점수;
+				scoreAveList[i] = (double)sum/학생수;
+			}
+			
+			
+		}
+		
+		for(int k=0; k<케이스수; k++) {
+			System.out.println("********************************");
+			System.out.println((k+1) + "번째 케이스의 평균 :" + Math.round(scoreAveList[k] * 1000) / 1000.00);
+		}
+	}
+}
