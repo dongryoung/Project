@@ -1,0 +1,55 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class Pracatice {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("1~1000 숫자 입력");
+		int n = sc.nextInt();
+		
+		if(n<1 || n>1000) {
+			System.out.println("입력오류");
+			return;
+		}
+		
+		int cnt = go(n);
+		System.out.println("한수의 개수 : " + cnt + "개");
+		
+		/*
+		int a = (n/100);
+		int b = ((n/10)%10);
+		int c = n- ((n/10)*10);
+		
+		System.out.println("a : " + a);
+		System.out.println("b : " + b);
+		System.out.println("c : " + c);
+		*/
+	}
+	
+	public static int go(int n){
+		
+		int cnt = 0;
+		
+		if(n<100) {
+			return n;
+		}
+		else {
+			
+			for(int i=100; i<=n; i++) {
+				int a = (i/100);
+				int b = ((i/10)%10);
+				int c = i- ((i/10)*10);
+				
+				if((a-b)==(b-c)) {
+					cnt++;
+				}
+				
+			}
+			return (cnt+99);
+		}
+	}
+}
